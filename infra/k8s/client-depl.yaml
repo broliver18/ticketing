@@ -15,12 +15,6 @@ spec:
       containers:
         - name: client
           image: boliveira18/client
-          env:
-            - name: BASE_URL
-              valueFrom:
-                configMapKeyRef:
-                  name: ticketing-config
-                  key: BASE_URL
 ---
 apiVersion: v1
 kind: Service
