@@ -3,7 +3,7 @@ import axios from 'axios';
 const buildClient = ({ req }) => {
   if (typeof window === 'undefined') {
     return axios.create({
-      baseURL: process.env.BASE_URL,
+      baseURL: 'http://www.ticketing-app-prod-bruno.xyz',
       headers: req.headers,
     });
   } else {

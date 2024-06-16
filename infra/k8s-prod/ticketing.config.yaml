@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: ticketing-config
-data:
-  BASE_URL: 'http://ticketing-app-prod-bruno.xyz'
