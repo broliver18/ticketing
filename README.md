@@ -16,7 +16,9 @@ Replace your_jwt_secret and your_stripe_secret_key with your preferred secret ke
 ### Ingress Controller
 To set up the Ingress controller for Kubernetes, apply the following configuration:
 
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml`
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+```
 This will deploy the Ingress controller, allowing external access to your application.
 
 ## Running the Application
@@ -24,11 +26,15 @@ After setting up the secrets and the Ingress controller, you can run the Ticketi
 
 1. Clone this repository:
 
-`git clone https://github.com/your_username/ticketing-app.git`
-Navigate to the project directory:
+```
+git clone https://github.com/your_username/ticketing-app.git
+```
+2. Navigate to the project directory:
 
-`cd ticketing-app`
-2. Install dependencies for each service:
+```
+cd ticketing-app
+```
+3. Install dependencies for each service:
 
 ```
 cd auth && npm install && cd ..
@@ -36,9 +42,9 @@ cd tickets && npm install && cd ..
 cd orders && npm install && cd ..
 cd client && npm install && cd ..
 cd expirations && npm install && cd ..
-Run each service:
 ```
-
+4. Run each service:
+```
 # Run Auth service
 cd auth && npm start
 
@@ -53,10 +59,10 @@ cd expirations && npm start
 
 # Run Client (Frontend) service
 cd client && npm start
-Access the application in your browser at http://localhost:3000.
+```
 
-Contributing
+5. Access the application in your browser at `http://localhost:3000`.
+
+## Contributing
 Feel free to contribute to this project by submitting pull requests or opening issues. Your contributions are highly appreciated!
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
