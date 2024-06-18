@@ -1,5 +1,7 @@
 # Ticketing App
-This repository contains a ticketing application that enables users to purchase tickets online and make payments. The application is built using React.js for the frontend, Node.js for the backend, and it follows a microservices architecture. MongoDB is used as the primary database for storage and JetStream (Pub/Sub system) as a communicator between microservices.
+
+## Desicription
+This repository contains a ticketing application that enables users to purchase tickets online and make payments. The application is built using server-side rendering Raact.js running on Next.js for the frontend and Node.js for the backend. This app follows a microservices architecture while using MongoDB as the primary database for storage and NATS JetStream (Pub/Sub system) as a communicator between microservices.
 
 ## Setup
 Before running the application, ensure that you have set up the necessary configurations and dependencies.
